@@ -46,11 +46,11 @@ background-position:right bottom;
   color: #fff;
 }
 .deck-container .slide ::selection {
-  background: #c00;
+  background: #0077d4;
   color: #fff;
 }
 .deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited {
-  color: #c00;
+  color: #0077d4;
   text-decoration: none;
 }
 .deck-container .slide a:hover, .deck-container .slide a:focus {
