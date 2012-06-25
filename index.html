@@ -135,11 +135,27 @@
 <li class="slide" id="cas-2">Greenhouse gas emissions (DEP requirement)</li>
 </ul>
 </div><div class="slide" id="TheEnd"><h2>Technology available at OTP</h2>
-<p><video width="640px" height="480px" controls="controls">
-  <source src="vid/NewtonCornerTest.ogg" type="video/ogg" />
-  <source src="vid/NewtonCornerTest.webm" type="video/webm" />
-   <source src="vid/NewtonCornerTest.mp4" type="video/mp4" />
-   </video></p>
+
+
+<!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody -->
+<video controls="controls" width="640" height="480">
+    <source src="vid/NewtonCornerTest.mp4" type="video/mp4" />
+	<source src="vid/NewtonCornerTest.webm" type="video/webm" />
+	<source src="vid/NewtonCornerTest.ogg" type="video/ogg" />
+	<object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="480">
+		<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+		<param name="allowFullScreen" value="true" />
+		<param name="wmode" value="transparent" />
+		<param name="flashVars" value="config={'playlist':[{'url':'vid%2FNewtonCornerTest.flv','autoPlay':false}]}" />
+		<span title="No video playback capabilities, please download the video below">Newton Corner Test</span>
+	</object>
+</video>
+<p>
+	<strong>Download video:</strong> <a href="vid/NewtonCornerTest.mp4">MP4 format</a> | <a href="vid/NewtonCornerTest.ogg">Ogg format</a> | <a href="vid/NewtonCornerTest.webm">WebM format</a>
+</p>
+
+
+
 </div>
 
 <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
@@ -200,6 +216,6 @@ $(function() {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script><script type="text/javascript" src="http://html5.kaltura.org/js"></script> 
+
 </body>
 </html>
