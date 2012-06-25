@@ -1,17 +1,17 @@
 .deck-container {
 	font-family: "Helvetica Neue", sans-serif;
-	font-size:1.25em;
+	font-size:1.75em;
 	background:#fff;
 	
 	.slide {
 		background:#fff;
 		
 		h1 {
-			color:#0077d4;
+			color:#000;
 		}
 
 		h2 {
-			color:#0077d4;
+			color:#c00;
 			border-bottom-color:#ccc;
 		}
 
@@ -46,12 +46,12 @@
 			}
 		}
 
-		::-moz-selection{ background:#0077d4; color:#fff; }
-		::selection { background:#0077d4; color:#fff; }
+		::-moz-selection{ background:#c00; color:#fff; }
+		::selection { background:#c00; color:#fff; }
 
 		a {
 			&, &:hover, &:focus, &:active, &:visited {
-				color:#0077d4;
+				color:#c00;
 				text-decoration:none;
 			}
 
@@ -60,6 +60,22 @@
 			}
 		}
 	}
+	
+	> .slide {
+		.deck-before, .deck-previous {
+			opacity:0.4;
+			
+			&:not(.deck-child-current) {
+				.deck-before, .deck-previous {
+					opacity:1;
+				}
+			}
+		}
+		
+		.deck-child-current {
+			opacity:1;
+		}
+	} 
 	
 	.deck-prev-link, .deck-next-link {
 		background:#ccc;
@@ -70,7 +86,7 @@
 		}
 		
 		&:hover, &:focus {
-			background:#0077d4;
+			background:#c00;
 			text-decoration:none;
 		}
 	}
